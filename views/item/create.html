@@ -15,6 +15,6 @@
         <label>category :</label><br />
         <select ng-model="item.category_id" ng-options="category.id as category.name for category in categories"></select><br /><br />
 
-        <button ng-click="createItem(item)">create</button>
+        <button ng-click="save(item)">save Item</button>
     </form>
 </div>
