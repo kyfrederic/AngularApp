@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <!-- vendors     -->
+        <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+        <script type="text/javascript" src="bower_components/angular_route/angular_route.js"></script>
+        <script type="text/javascript" src="bower_components/firebase/firebase.js"></script>
+        <script type="text/javascript" src="bower_components/angularfire/dist/angularfire.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+        <script type="text/javascript" src="routing.js"></script>
+
+        <!-- Services -->
+        <script type="text/javascript" src="src/services/itemProvider.js"></script>
+        <script type="text/javascript" src="src/services/categoryProvider.js"></script>
+
+        <!-- Directives -->
+        <script type="text/javascript" src="src/directives/decoratorDirective.js"></script>
+
+        <!-- Controllers -->
+        <script type="text/javascript" src="src/controllers/categoryController.js"></script>
+        <script type="text/javascript" src="src/controllers/itemController.js"></script>
+
+    </head>
+    <body ng-app="collectify">
+        <div ng-view></div>
+    </body>
+</html>

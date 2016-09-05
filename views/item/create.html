@@ -1,0 +1,20 @@
+<h1>Welcome to Collectify</h1>
+
+<ul>
+    <li><a href="#/">Index</a></li>
+    <li><a href="#/items">List of items</a></li>
+    <li><a href="#/categories">List of categories</a></li>
+    <li><a href="#/categories/new">Create new categories</a></li>
+</ul>
+
+<div id="container">
+    <form>
+        <label>name :</label><br />
+        <input ng-model="item.name" type="text" name="name"><br /><br />
+
+        <label>category :</label><br />
+        <select ng-model="item.category_id" ng-options="category.id as category.name for category in categories"></select><br /><br />
+
+        <button ng-click="createItem(item)">create</button>
+    </form>
+</div>
