@@ -22,7 +22,7 @@ app
 
     .controller('itemCreate', function ($scope, categoryProvider, itemProvider) {
         $scope.categories = categoryProvider.getCategories();
-        //$scope.items = itemProvider.getItems();
+        $scope.items = itemProvider.getItems();
 
         $scope.save = function (item) {
             itemProvider.create(item);

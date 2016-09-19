@@ -5,9 +5,11 @@ app.service('itemProvider', function ($firebase) {
         var sync = $firebase(ref);
         //sync.$set('items', items); 
         var items = sync.$asArray();
-
+        
     this.getItems = function () {
+        //var items = ['Sébastien', 'Laurence', 'Ludovic', 'Pauline', 'Guillaume'];
         return items;
+        
     }
 // l'ajout refraichit automatiquement la collection dans firebase (sync.$asArray();) donc pas besoin de return
     this.create = function (item) {
